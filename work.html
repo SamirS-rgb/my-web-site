@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services - Advancedscurety4al</title>
+<style>
+  /* Smooth colorful gradient background */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2, #6a11cb);
+    color: #f0f0f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: rgba(0,0,0,0.25);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  /* Language selector */
+  #language-select {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #f0f0f5;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  #language-select:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  main {
+    flex-grow: 1;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    line-height: 1.6;
+  }
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  main p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  /* Responsive for Arabic */
+  [dir="rtl"] {
+    text-align: right;
+  }
+
+  /* Buttons */
+  .button-container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .btn {
+    background: #764ba2;
+    color: #f0f0f5;
+    border: none;
+    padding: 0.75rem 2rem;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(118, 75, 162, 0.6);
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+  }
+  .btn:hover {
+    background: #6a11cb;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(106, 17, 203, 0.8);
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Advancedscurety4al</h1>
+  <select id="language-select" aria-label="Select Language">
+    <option value="en" selected>English</option>
+    <option value="ar">العربية</option>
+    <option value="ru">Русский</option>
+    <option value="fr">Français</option>
+  </select>
+</header>
+
+<main id="content" dir="ltr">
+  <h2>Our Services</h2>
+  <p>
+    At Advancedscurety4al, we are dedicated to providing unparalleled cybersecurity services tailored to your business needs. We understand that in today’s digital age, security is paramount. Our experts deploy cutting-edge solutions to protect your infrastructure from emerging threats. From comprehensive vulnerability assessments to real-time threat monitoring, our services cover every aspect of cyber defense. We emphasize proactive strategies to prevent attacks before they occur. Our team continuously researches the latest security trends and technologies, ensuring your defenses remain robust. We also assist with regulatory compliance, data privacy, and risk management. Partner with us to build resilience and trust with your clients, knowing your digital assets are guarded by the best. Our holistic approach integrates innovation, experience, and dedication. Let us help you stay secure in a rapidly evolving cyber landscape.
+  </p>
+  <div class="button-container">
+    <button class="btn" id="contactBtn">Contact Us</button>
+    <button class="btn" id="payBtn">Pay on WhatsApp</button>
+  </div>
+</main>
+
+<script>
+  const content = {
+    en: {
+      dir: 'ltr',
+      heading: 'Our Services',
+      text: `At Advancedscurety4al, we are dedicated to providing unparalleled cybersecurity services tailored to your business needs. We understand that in today’s digital age, security is paramount. Our experts deploy cutting-edge solutions to protect your infrastructure from emerging threats. From comprehensive vulnerability assessments to real-time threat monitoring, our services cover every aspect of cyber defense. We emphasize proactive strategies to prevent attacks before they occur. Our team continuously researches the latest security trends and technologies, ensuring your defenses remain robust. We also assist with regulatory compliance, data privacy, and risk management. Partner with us to build resilience and trust with your clients, knowing your digital assets are guarded by the best. Our holistic approach integrates innovation, experience, and dedication. Let us help you stay secure in a rapidly evolving cyber landscape.`
+    },
+    ar: {
+      dir: 'rtl',
+      heading: 'خدماتنا',
+      text: `في Advancedscurety4al، نحن ملتزمون بتقديم خدمات أمن سيبراني لا مثيل لها مصممة خصيصًا لاحتياجات عملك. نحن ندرك أن الأمان هو أمر بالغ الأهمية في عصرنا الرقمي الحالي. يقوم خبراؤنا بنشر حلول متطورة لحماية البنية التحتية الخاصة بك من التهديدات الناشئة. بدءًا من تقييمات الثغرات الشاملة إلى مراقبة التهديدات في الوقت الحقيقي، تغطي خدماتنا كل جانب من جوانب الدفاع السيبراني. نؤكد على استراتيجيات استباقية لمنع الهجمات قبل وقوعها. فريقنا يواصل البحث في أحدث الاتجاهات والتقنيات الأمنية لضمان بقاء دفاعاتك قوية. نساعد أيضًا في الامتثال للوائح، خصوصية البيانات، وإدارة المخاطر. شاركنا لبناء مرونة وثقة مع عملائك، مع العلم أن أصولك الرقمية محمية بأفضل الطرق. نهجنا الشامل يجمع بين الابتكار، الخبرة، والتفاني. دعنا نساعدك على البقاء آمناً في عالم إلكتروني سريع التطور.`
+    },
+    ru: {
+      dir: 'ltr',
+      heading: 'Наши услуги',
+      text: `В Advancedscurety4al мы стремимся предоставить непревзойденные услуги кибербезопасности, адаптированные к потребностям вашего бизнеса. Мы понимаем, что безопасность имеет первостепенное значение в цифровую эпоху. Наши эксперты используют передовые решения для защиты вашей инфраструктуры от возникающих угроз. От комплексной оценки уязвимостей до мониторинга угроз в режиме реального времени — наши услуги охватывают все аспекты киберзащиты. Мы делаем упор на проактивные стратегии предотвращения атак. Наша команда постоянно исследует последние тенденции и технологии безопасности, обеспечивая надежность вашей защиты. Мы также помогаем с соблюдением нормативных требований, конфиденциальностью данных и управлением рисками. Сотрудничайте с нами для создания устойчивости и доверия клиентов, зная, что ваши цифровые активы надежно защищены. Наш целостный подход объединяет инновации, опыт и преданность делу. Позвольте нам помочь вам оставаться в безопасности в быстро меняющемся киберпространстве.`
+    },
+    fr: {
+      dir: 'ltr',
+      heading: 'Nos Services',
+      text: `Chez Advancedscurety4al, nous nous engageons à fournir des services de cybersécurité inégalés adaptés aux besoins de votre entreprise. Nous comprenons que la sécurité est primordiale à l'ère numérique actuelle. Nos experts déploient des solutions de pointe pour protéger votre infrastructure contre les menaces émergentes. Des évaluations complètes des vulnérabilités à la surveillance en temps réel des menaces, nos services couvrent tous les aspects de la défense cybernétique. Nous mettons l'accent sur des stratégies proactives pour prévenir les attaques avant qu'elles ne se produisent. Notre équipe recherche continuellement les dernières tendances et technologies de sécurité pour garantir la robustesse de vos défenses. Nous aidons également à la conformité réglementaire, à la confidentialité des données et à la gestion des risques. Partenariat avec nous pour renforcer la résilience et la confiance de vos clients, sachant que vos actifs numériques sont bien protégés. Notre approche holistique intègre innovation, expérience et dévouement. Laissez-nous vous aider à rester en sécurité dans un paysage cybernétique en évolution rapide.`
+    }
+  };
+
+  const languageSelect = document.getElementById('language-select');
+  const main = document.getElementById('content');
+
+  function updateContent(lang) {
+    const data = content[lang] || content.en;
+    main.setAttribute('dir', data.dir);
+    main.querySelector('h2').textContent = data.heading;
+    main.querySelector('p').textContent = data.text;
+  }
+
+  languageSelect.addEventListener('change', (e) => {
+    updateContent(e.target.value);
+  });
+
+  // Initial load
+  updateContent(languageSelect.value);
+
+  // WhatsApp buttons functionality
+  document.getElementById('contactBtn').addEventListener('click', () => {
+    window.open('https://wa.me/?text=Hello%20Advancedscurety4al%2C%20I%20would%20like%20to%20contact%20you%20regarding%20your%20services.', '_blank');
+  });
+  document.getElementById('payBtn').addEventListener('click', () => {
+    window.open('https://wa.me/?text=Hello%20Advancedscurety4al%2C%20I%20would%20like%20to%20pay%20for%20your%20services.', '_blank');
+  });
+</script>
+</body>
+</html>
